@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jtnxgwXJLjuir5YGHVjNEutDAmqaYaMOq2uAfKE5jbY=",
+  "Source": "ExternalAuthenticationProviders",
+  "BasePath": "_content/ExternalAuthenticationProviders",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
