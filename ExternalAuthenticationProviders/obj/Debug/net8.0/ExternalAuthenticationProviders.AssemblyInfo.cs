@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExternalAuthenticationProviders")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acc98e7ceaf8f6f5b35884dbdc6dc4b0fc133027")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExternalAuthenticationProviders")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExternalAuthenticationProviders")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

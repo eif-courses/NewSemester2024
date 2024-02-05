@@ -34,10 +34,12 @@ builder.Services.AddAuthentication("cookie")
 
     });
 
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-app.UseAuthentication();
+app.UseAuthentication(); // Make sure authentication is called before authorization
+app.UseAuthorization(); // Add this line if not already present
 
 
 app.MapGet("/", (HttpContext context) =>
@@ -50,7 +52,30 @@ app.MapGet("/login", () => Results.Challenge(
     {
         RedirectUri = "https://localhost:5005"
     },
-    authenticationSchemes: new List<string> { "github" }));
+    authenticationSchemes: new List<string> { "github" })
+);
+
+
+app.MapGet("/logout", async (HttpContext context) =>
+{
+    await context.SignOutAsync("cookie"); // Sign out from the cookie authentication scheme
+    return Results.Redirect("/"); // Redirect the user after logging out
+});
+
+
+
+
+app.MapGet("/protected", async (HttpContext context) =>
+{
+    if (context.User.Identity?.IsAuthenticated == true)
+    {
+        return Results.Ok(new { message = "This is protected data only for authenticated users." });
+    }
+    return Results.Redirect("/login");
+});
+
+
+
 
 app.Run();
 

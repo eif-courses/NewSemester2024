@@ -31,3 +31,4 @@ C:\Users\Marius\RiderProjects\NewSemester2024\ExternalAuthenticationProviders\ob
 C:\Users\Marius\RiderProjects\NewSemester2024\ExternalAuthenticationProviders\obj\Debug\net8.0\ExternalAuthenticationProviders.pdb
 C:\Users\Marius\RiderProjects\NewSemester2024\ExternalAuthenticationProviders\obj\Debug\net8.0\ExternalAuthenticationProviders.genruntimeconfig.cache
 C:\Users\Marius\RiderProjects\NewSemester2024\ExternalAuthenticationProviders\obj\Debug\net8.0\ref\ExternalAuthenticationProviders.dll
+C:\Users\Marius\RiderProjects\NewSemester2024\ExternalAuthenticationProviders\obj\Debug\net8.0\ExternalAuthenticationProviders.sourcelink.json
